@@ -38,6 +38,8 @@ app.post("/totp-validate", (request, response, next) => {
     });
 });
 
+const tiempo = new Date();
+
 app.listen(3002, () => {
-    console.log("Listening at :3002...");
+    console.log("Listening at :3002... On: ", tiempo);
 });
